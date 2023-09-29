@@ -1,0 +1,107 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100dvw;
+    height:100dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    background: linear-gradient(315deg,#5f58b2,#A3C7D6);
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+header{
+    inset: 0;
+    position: absolute;
+    display: flex;
+    padding: 1rem;
+    width: full;
+    height: 5rem;
+    background:linear-gradient(315deg,#35155D, #8CABFF);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    word-spacing: 3px;
+    text-align: center;
+}
+video{
+    border-radius: 22px;
+overflow: hidden;
+-webkit-transform: translateZ(0);
+box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+}
+.stream{
+    position: relative;
+}
+canvas{
+    position:absolute;
+    z-index: 10; 
+    inset: 0;
+}
+
+.result-container{
+    width: 25rem;
+    padding: 15px 20px;
+    border-radius: 18px;
+
+}
+.result-container > div{
+    margin-bottom: 3rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+#emotion{
+    background:linear-gradient(315deg,#461959, #CD6688);
+    padding: 1rem;
+    border-radius: 18px;
+}
+#gender{
+    background:linear-gradient(315deg,#0E21A0, #9D44C0);
+    padding: 1rem;
+    border-radius: 18px;
+}
+#age{
+    background:linear-gradient(315deg,#4A55A2, #A0BFE0);
+    padding: 1rem;
+    border-radius: 18px;
+}
+.guide{
+    background:linear-gradient(315deg,#9A3B3B, #E25E3E);
+    padding: 1rem;
+    border-radius: 18px;  
+}
+@media only screen and (max-width:1024px) {
+    body{
+        flex-direction: column;
+        padding: 8rem 3rem;
+        min-height: 30rem;
+    }
+    
+}
+
+@media only screen and (max-width:550px) {
+    body{
+        flex-direction: column;
+        padding: 8rem 3rem;
+        width: 150dvw;
+        background: #1a1a1a;
+    }
+    
+}
+@media only screen and (max-height:600px) and (max-width:1024px){
+
+    body{
+        min-height: 70rem;
+
+    }
+}
+@media only screen and (max-height:1024px) and (max-width:1024px){
+
+    body{
+        min-height: 80rem;
+
+    }
+}
